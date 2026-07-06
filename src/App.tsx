@@ -111,8 +111,9 @@ const timelineEvents: TimelineEvent[] = [
       "Assisting students in classwork and understanding computer systems topics. Answering student questions online and in person.",
     startYear: 2025,
     startMonth: 7,
+    endYear: 2026,
+    endMonth: 4,
     type: "work",
-    current: true,
   },
   {
     id: "tech4humanity",
@@ -121,8 +122,9 @@ const timelineEvents: TimelineEvent[] = [
       "Researched how to control robotic prosthetics using EEG and EMG devices and protect the device from cyberattacks. Researching how music recommendations can be used to improve mental state and productivity.",
     startYear: 2024,
     startMonth: 7,
+    endYear: 2026,
+    endMonth: 0,
     type: "research",
-    current: true,
   },
   {
     id: "bs-cs",
@@ -134,7 +136,7 @@ const timelineEvents: TimelineEvent[] = [
     endYear: 2026,
     endMonth: 4,
     type: "education",
-    current: true,
+    current: false,
   },
   {
     id: "stratedge",
@@ -224,18 +226,22 @@ function HeroSection({
           }`}
         >
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-12 justify-center">
-            <div className="w-32 h-32 flex-shrink-0 overflow-hidden rounded-full border-2 border-accent shadow-lg bg-jet flex items-center justify-center">
-              <span className="text-4xl font-bold text-accent">CC</span>
+            <div className="w-32 h-32 flex-shrink-0 overflow-hidden rounded-full border-2 border-accent shadow-lg">
+              <img
+                src="/images/headshot.jpg"
+                alt="Christian Calvo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="text-center sm:text-left">
               <h1 className="text-xl md:text-2xl font-bold mb-1 text-white">
                 Christian Calvo
               </h1>
               <p className="text-dim-gray text-sm md:text-base mb-1.5">
-                BS Honors in Computer Science
+                MS in Computer Science
               </p>
               <p className="text-dim-gray text-xs md:text-sm mb-3">
-                Virginia Tech
+                University of Michigan - Ann Arbor
               </p>
 
               <div className="flex gap-3 items-center justify-center sm:justify-start flex-wrap">
@@ -258,7 +264,7 @@ function HeroSection({
                   <LinkedinIcon className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://scholar.google.com/citations?user=9SduBHsAAAAJ&hl=en&authuser=4"
+                  href="https://scholar.google.com/citations?user=9SduBHsAAAAJ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-dim-gray hover:text-accent transition-colors inline-flex"
@@ -312,8 +318,7 @@ function ResearchSection({
               className="text-accent underline hover:text-accent-light transition-colors"
             >
               Dr. Tu Vu
-            </a>{" "}
-            at Virginia Tech.
+            </a>.
           </p>
         </div>
 
