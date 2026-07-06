@@ -85,26 +85,100 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    id: "graduate-researcher",
-    title: "Graduate Student Researcher — University of Michigan",
+    id: "ms-umich",
+    title: "MS in Computer Science — University of Michigan, Ann Arbor",
     description:
-      "Researching advanced reasoning methods and agentic skills in large language models under Dr. Tu Vu, focusing on automated skill discovery and multi-agent inference-time algorithms.",
+      "Incoming graduate student pursuing a Master's in Computer Science.",
+    startYear: 2026,
+    startMonth: 7,
+    type: "education",
+    current: true,
+  },
+  {
+    id: "vt-llms-lab",
+    title: "Undergraduate Researcher — VT LLMs Lab",
+    description:
+      "Participating in research on automated skill discovery for agents and the creation of a dataset for training LLM models to utilize skills.",
     startYear: 2025,
-    startMonth: 1,
+    startMonth: 7,
     type: "research",
     current: true,
   },
   {
-    id: "ms-cs",
-    title: "MS in Computer Science — University of Michigan",
+    id: "vt-uta",
+    title: "Undergraduate Teaching Assistant — Virginia Tech",
     description:
-      "Conducting research on LLM reasoning and agent skill evolution. Graduate coursework in Machine Learning, Artificial Intelligence, and Advanced Algorithms.",
+      "Assisting students in classwork and understanding computer systems topics. Answering student questions online and in person.",
+    startYear: 2025,
+    startMonth: 7,
+    type: "work",
+    current: true,
+  },
+  {
+    id: "tech4humanity",
+    title: "Undergraduate Researcher — Tech4Humanity Lab",
+    description:
+      "Researched how to control robotic prosthetics using EEG and EMG devices and protect the device from cyberattacks. Researching how music recommendations can be used to improve mental state and productivity.",
     startYear: 2024,
+    startMonth: 7,
+    type: "research",
+    current: true,
+  },
+  {
+    id: "bs-cs",
+    title: "BS Honors in Computer Science — Virginia Tech",
+    description:
+      "Specialization in Artificial Intelligence and Data Science. Recipient of Dean's List for Fall 2022, Fall 2023, and Spring 2024. 3.4 GPA.",
+    startYear: 2022,
     startMonth: 7,
     endYear: 2026,
     endMonth: 4,
     type: "education",
     current: true,
+  },
+  {
+    id: "stratedge",
+    title: "Software Engineer Intern — StratEdge",
+    description:
+      "Programmed a prototype app for creating and optimizing investment portfolios using data pulled from Yahoo Finance through financial algorithms. Gained experience in investment models, portfolios, and predictions.",
+    startYear: 2023,
+    startMonth: 5,
+    endYear: 2023,
+    endMonth: 7,
+    type: "work",
+  },
+  {
+    id: "vt-rsap",
+    title: "RSAP South Korea/Japan Program — Virginia Tech",
+    description:
+      "Traveled to South Korea and Japan to visit companies and universities such as Seoul Robotics, Hyundai, Sony, JAXA, and Hanyang University.",
+    startYear: 2023,
+    startMonth: 5,
+    endYear: 2023,
+    endMonth: 7,
+    type: "education",
+  },
+  {
+    id: "mecha-makos",
+    title: "Lead Programmer — Mecha Makos Engineering Robots Club",
+    description:
+      "Led the development of code for autonomous and remote controlled robotics competitions.",
+    startYear: 2020,
+    startMonth: 9,
+    endYear: 2022,
+    endMonth: 5,
+    type: "work",
+  },
+  {
+    id: "nasa-sees",
+    title: "Summer Intern — NASA SEES",
+    description:
+      "Utilized population density and urbanization data to aid NASA research on population mobility and pandemic spread.",
+    startYear: 2020,
+    startMonth: 5,
+    endYear: 2020,
+    endMonth: 7,
+    type: "work",
   },
 ];
 
@@ -158,10 +232,10 @@ function HeroSection({
                 Christian Calvo
               </h1>
               <p className="text-dim-gray text-sm md:text-base mb-1.5">
-                MS Student in Computer Science
+                BS Honors in Computer Science
               </p>
               <p className="text-dim-gray text-xs md:text-sm mb-3">
-                University of Michigan, Ann Arbor
+                Virginia Tech
               </p>
 
               <div className="flex gap-3 items-center justify-center sm:justify-start flex-wrap">
@@ -184,7 +258,7 @@ function HeroSection({
                   <LinkedinIcon className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://scholar.google.com/citations?user=YOUR_ID"
+                  href="https://scholar.google.com/citations?user=9SduBHsAAAAJ&hl=en&authuser=4"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-dim-gray hover:text-accent transition-colors inline-flex"
@@ -239,7 +313,7 @@ function ResearchSection({
             >
               Dr. Tu Vu
             </a>{" "}
-            at the University of Michigan.
+            at Virginia Tech.
           </p>
         </div>
 
